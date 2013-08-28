@@ -141,7 +141,7 @@ fi
 LINK_TARGET=$(echo $PATH | cut -d':' -f1)
 mkdir -p $LINK_TARGET
 for BIN in $(ls /opt/chef/bin); do
-  ln -s /opt/chef/bin/$BIN $LINK_TARGET/$BIN
+  ln -f -s /opt/chef/bin/$BIN $LINK_TARGET/$BIN
 done
 
 if [ $? -ne 0 ];
