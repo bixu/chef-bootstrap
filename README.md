@@ -1,4 +1,4 @@
-chef-bootstrap
+usage:
 ==============
 
-Tool(s) to bootstrap Chef on a newly-provisioned host.
+curl -L https://raw.github.com/bixu/chef-bootstrap/master/install.sh | sudo bash
