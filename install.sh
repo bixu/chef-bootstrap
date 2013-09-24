@@ -56,7 +56,7 @@ shift `expr $OPTIND - 1`
 
 machine=$(printf `uname -m`)
 
-if grep Joyent /etc/product >/dev/null;
+if grep SmartOS /etc/release >/dev/null;
 then
   platform="smartos"
   machine=$(/usr/bin/uname -p)
