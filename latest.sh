@@ -84,7 +84,7 @@ echo "Downloading Chef $version for ${platform}..."
 #url="https://www.opscode.com/chef/download?v=${version}&prerelease=${prerelease}&p=${platform}&pv=${platform_version}&m=${machine}"
 
 
-url="http://cuddletech.com/chef/chef-11.6.0_0.smartos.5.11.sh"
+url="https://us-east.manta.joyent.com/wanelo/public/cache/chef/omnibus/chef-11.6.0_0.smartos.5.11.sh"
 
 tmp_dir=$(mktemp -d -t tmp.XXXXXXXX || echo "/tmp")
 
