@@ -135,7 +135,10 @@ esac
 
 echo "Updating Chef"
 case "$filetype" in
-  "sh" ) /opt/chef/embedded/bin/gem install chef --no-ri --no-rdoc 2>/dev/null ;;
+  "sh" )
+    pkgin -y in build-essential
+    /opt/chef/embedded/bin/gem install chef --no-ri --no-rdoc 2>/dev/null
+    ;;
 esac
 
 if [ "$tmp_dir" != "/tmp" ];
