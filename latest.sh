@@ -137,7 +137,7 @@ echo "Updating Chef"
 case "$filetype" in
   "sh" )
     pkgin -y in build-essential
-    /opt/chef/embedded/bin/gem install chef --no-ri --no-rdoc 2>/dev/null
+    /opt/chef/embedded/bin/gem install chef --version 11.16.4 --no-ri --no-rdoc 2>/dev/null
     ;;
 esac
 
